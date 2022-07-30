@@ -103,6 +103,9 @@ class _HomePageState extends State<HomePage> {
                           padding: EdgeInsets.all(10.0),
                           decoration: BoxDecoration(),
                           child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
                             child:Container(
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -112,25 +115,26 @@ class _HomePageState extends State<HomePage> {
                                       backgroundImage:NetworkImage(getxController.data["items"][index]["owner"]["profile_image"]),),
                                     title: Text(
                                         getxController.data["items"][index]["title"],
-                                        style: TextStyle(fontSize: 30.0)
+                                        style: TextStyle(fontSize: 18.0)
                                     ),
                                     subtitle: Text(
                                         getxController.data["items"][index]["owner"]["display_name"],
-                                        style: TextStyle(fontSize: 18.0)
+                                        style: TextStyle(fontSize: 14.0)
                                     ),
                                   ),
                                   Container(
                                     height: 50,
                                     child: ListView.builder(itemCount: getxController.data["items"][index]["tags"].length,scrollDirection:Axis.horizontal, itemBuilder: (BuildContext context, int i) {
                                       return Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
                                         child: InkWell(
                                           onTap: (){
                                             search.text = getxController.data["items"][index]["tags"][i];
                                             getxController.getData(getxController.data["items"][index]["tags"][i]);
                                           },
                                           child: Chip(
-                                            padding: EdgeInsets.all(8),backgroundColor: Colors.greenAccent[100], label: Text(getxController.data["items"][index]["tags"][i]),),
+                                            padding: EdgeInsets.all(8),backgroundColor: Colors.lightBlueAccent[100],
+                                            label: Text(getxController.data["items"][index]["tags"][i]),),
                                         ),
                                       );
                                     },),
