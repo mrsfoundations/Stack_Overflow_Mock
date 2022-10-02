@@ -12,8 +12,9 @@ class Controller extends GetxController{
       var response = await http.get(Uri.parse(api));
       data = json.decode(response.body);
       print(data);
-    } 
-    
+    } catch(e) {
+      print(e);
+    }
     update();
   }
 }
