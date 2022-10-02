@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       // Remove the debug banner
         debugShowCheckedModeBanner: false,
-        title: 'Stack Overflow Mock',
+        title: 'StackOverflow Mock',
         theme: ThemeData(
           primarySwatch: Colors.indigo,
         ),
