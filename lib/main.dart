@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                   Container(
-                                    height: 50,
+                                    height: 51,
                                     child: ListView.builder(itemCount: getxController.data["items"][index]["tags"].length,scrollDirection:Axis.horizontal, itemBuilder: (BuildContext context, int i) {
                                       return Padding(
                                         padding: const EdgeInsets.symmetric(horizontal: 5.0),
