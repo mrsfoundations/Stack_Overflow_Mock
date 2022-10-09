@@ -8,7 +8,7 @@ class Controller extends GetxController{
 
   Future getData(searchData) async {
     try{
-      final api = "https://api.stackexchange.com/2.3/search?tagged=$searchData&site=stackoverflow";
+      final api = "ENTER YOUR API-KEY";
       var response = await http.get(Uri.parse(api));
       data = json.decode(response.body);
       print(data);
