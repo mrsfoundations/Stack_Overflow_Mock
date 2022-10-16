@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'StackOverflow Mock',
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primarySwatch: Colors.indego,
+       
         ),
         home: const HomePage());
   }
