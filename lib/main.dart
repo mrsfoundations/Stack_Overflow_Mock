@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                         child: TextField(
                           controller: search,
                           decoration: InputDecoration(
-                            hintText: 'ENTER YOUR VALUE',
+                            hintText: 'Search',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40),
                             ),
