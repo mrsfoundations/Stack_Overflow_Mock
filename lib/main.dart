@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title:const Text("Stack_Overflow_Mock"),
+        title:const Text("Stack Overflow Mock"),
         centerTitle: true,
       ),
       body: SafeArea(
